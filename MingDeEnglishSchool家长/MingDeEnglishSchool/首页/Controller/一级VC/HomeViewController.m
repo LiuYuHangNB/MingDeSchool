@@ -69,8 +69,9 @@ static NSString *kMessageType = @"MessageType";
     }
 
     [self initData];
-    [self initNavigationBar];
     [self initImageView];
+
+    [self initNavigationBar];
     [self initTableView];
     [self initCollectionView];
 
@@ -223,7 +224,6 @@ static NSString *kMessageType = @"MessageType";
             
         }
         
-        [self.collectionView reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
     }];
