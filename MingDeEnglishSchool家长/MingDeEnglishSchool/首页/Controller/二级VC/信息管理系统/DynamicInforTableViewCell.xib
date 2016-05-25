@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="179" id="KGk-i7-Jjw" customClass="DynamicInforTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MMW-lM-hAK">
+                        <rect key="frame" x="3" y="8" width="100" height="100"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="MMW-lM-hAK" secondAttribute="height" multiplier="1:1" id="7HJ-Ra-Qds"/>
+                            <constraint firstAttribute="width" constant="100" id="Wxm-SC-si0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本校周末召开家长会,请各位家长准时参加" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYh-wf-0bi">
+                        <rect key="frame" x="108" y="8" width="239" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="信息分类:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAt-Nb-9c7">
+                        <rect key="frame" x="182" y="87" width="80" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pIK-n2-pin">
+                        <rect key="frame" x="-2" y="118" width="364" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="76O-x4-nXO"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动态信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGN-7V-X20">
+                        <rect key="frame" x="267" y="87" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="K6A-Ug-Qso"/>
+                            <constraint firstAttribute="width" constant="80" id="XYF-2T-Uoy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="cGN-7V-X20" secondAttribute="trailing" constant="5" id="18N-6P-WpU"/>
+                    <constraint firstItem="mAt-Nb-9c7" firstAttribute="bottom" secondItem="MMW-lM-hAK" secondAttribute="bottom" id="GoS-IQ-4Z6"/>
+                    <constraint firstItem="pIK-n2-pin" firstAttribute="top" secondItem="MMW-lM-hAK" secondAttribute="bottom" constant="10" id="HfE-bk-Pzg"/>
+                    <constraint firstItem="pIK-n2-pin" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-10" id="I9f-h0-iMv"/>
+                    <constraint firstItem="cGN-7V-X20" firstAttribute="height" secondItem="mAt-Nb-9c7" secondAttribute="height" id="Iyo-5a-qEF"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="MMW-lM-hAK" secondAttribute="leading" constant="5" id="TLV-Kg-crx"/>
+                    <constraint firstItem="gYh-wf-0bi" firstAttribute="top" secondItem="MMW-lM-hAK" secondAttribute="top" id="XHp-dv-8du"/>
+                    <constraint firstItem="cGN-7V-X20" firstAttribute="leading" secondItem="mAt-Nb-9c7" secondAttribute="trailing" constant="5" id="Xhv-R9-8Cz"/>
+                    <constraint firstItem="cGN-7V-X20" firstAttribute="bottom" secondItem="MMW-lM-hAK" secondAttribute="bottom" id="bBs-EP-gB3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pIK-n2-pin" secondAttribute="trailing" constant="-10" id="eyT-Al-YW6"/>
+                    <constraint firstItem="gYh-wf-0bi" firstAttribute="leading" secondItem="MMW-lM-hAK" secondAttribute="trailing" constant="5" id="h9B-7t-Fes"/>
+                    <constraint firstItem="MMW-lM-hAK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="iuX-Hx-OPa"/>
+                    <constraint firstItem="cGN-7V-X20" firstAttribute="width" secondItem="mAt-Nb-9c7" secondAttribute="width" id="qh8-li-CIv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gYh-wf-0bi" secondAttribute="trailing" constant="5" id="sog-t2-xaR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="MMW-lM-hAK" id="aOZ-FJ-5Wr"/>
+                <outlet property="kindLabel" destination="cGN-7V-X20" id="LC4-Kz-ACB"/>
+                <outlet property="lineView" destination="pIK-n2-pin" id="2MP-rG-v9L"/>
+                <outlet property="noticeLabel" destination="gYh-wf-0bi" id="QeG-6A-lD0"/>
+            </connections>
+            <point key="canvasLocation" x="198" y="170.5"/>
+        </tableViewCell>
+    </objects>
+</document>
